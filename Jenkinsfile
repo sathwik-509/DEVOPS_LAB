@@ -1,9 +1,10 @@
 pipeline {
     agent any
 
-    stage('Clone') {
-    steps {
-        git branch: 'main', url: 'https://github.com/sathwik-509/DEVOPS_LAB.git'
+    stages {
+        stage('Clone') {
+            steps {
+                git branch: 'main', url: 'https://github.com/sathwik-509/DEVOPS_LAB.git'
             }
         }
 
